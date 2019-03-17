@@ -1,9 +1,16 @@
 # Notas:
 
-Este es un pequeño servidor de express listo para ejecutarse y servir la carpeta public en la web.
-
-Recuerden que deben de reconstruir los módulos de node con el comando
+## Comdando para instalar las dependencias:
 
 ```
 npm install
+```
+## Para ver desplegado en heroku:
+
+https://tickets-colas-socket.herokuapp.com/
+
+## Para ejecutar el servidor de pruebas de forma local
+
+```
+npm run nodemone
 ```
