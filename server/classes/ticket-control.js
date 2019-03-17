@@ -48,7 +48,7 @@ class TicketControl {
         if (this.ultimos4.length > 4) {
             this.ultimos4.splice(-1, 1); // borra el ultimo
         }
-¡        this.grabarArchivo();
+        this.grabarArchivo();
         return atenderTicket;
     }
     reiniciarConteo() {
