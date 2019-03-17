@@ -15,21 +15,17 @@ const lblTickets = [lblTicket1, lblTicket2, lblTicket3, lblTicket4];
 const lblEscritorios = [lblEscritorio1, lblEscritorio2, lblEscritorio3, lblEscritorio4]
 
 socket.on('estadoActual', (data) => {
-    console.log(data);
     actualizarHtml(data.ultimos4)
 });
 
     socket.on('ultimos4', (data)=>{
-        console.log('ultimos 4: ', data);
         actualizarHtml(data.ultimos4);
         audio.play();
     })
 
 
 const actualizarHtml = (ultimos4) => {
-    console.log('entro perros :DD')
     for (let i = 0; i <= ultimos4.length - 1; i += 1) {
-        console.log('entro al for :d', ultimos4[i].numero, ultimos4[i].escritorio);
         lblTickets[i].text(`Ticket ${ultimos4[i].numero}`);
         lblEscritorios[i].text(`Ticket ${ultimos4[i].escritorio}`);
     }

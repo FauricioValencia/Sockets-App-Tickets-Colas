@@ -48,9 +48,7 @@ class TicketControl {
         if (this.ultimos4.length > 4) {
             this.ultimos4.splice(-1, 1); // borra el ultimo
         }
-        console.log('ultimos 4');
-        console.log(this.ultimos4);
-        this.grabarArchivo();
+¡        this.grabarArchivo();
         return atenderTicket;
     }
     reiniciarConteo() {
@@ -58,8 +56,6 @@ class TicketControl {
         this.tickets = [];
         this.ultimos4 = [];
         this.grabarArchivo();
-
-        console.log('Se ha reinicado perro');
     }
 
     grabarArchivo() {

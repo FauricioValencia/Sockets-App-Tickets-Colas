@@ -14,7 +14,6 @@ io.on('connection', (client) => {
         Ticket: ticketControl.ultimo
     })
     client.on('siguienteTicket', (data, callback) => {
-        console.log('siguiente: ', ticketControl.ultimo);
         ticketControl.siguiente();
         callback(ticketControl.ultimo);
     });

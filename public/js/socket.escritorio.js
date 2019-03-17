@@ -9,7 +9,6 @@ if (!searchParams.has('escritorio')) {
 }
 
 var escritorio = searchParams.get('escritorio');
-console.log(escritorio);
 $('h1').text(`Escritorio: ${escritorio}`);
 
 $('button').on('click', () => {
@@ -22,7 +21,6 @@ $('button').on('click', () => {
             label.text('Ya no hay mas tickets perrito :D');
             return;
         }
-        console.log('res:', resp)
         label.text(resp.numero);
     });
 })

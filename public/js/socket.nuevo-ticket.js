@@ -16,5 +16,4 @@ $('button').on('click', function () {
     socket.emit('siguienteTicket', null, function(siguienteTicket) {
         label.text(siguienteTicket);
     })
-    // socket.on('siguienteTicket', (data)=>console.log(':D',data))
 })
